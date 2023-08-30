@@ -1,15 +1,13 @@
-/*Exercício 2: Operações com char1s
-● Escreva um programa que:
-b. Peça ao usuário para digitar um char1, obtenha o mesmo da entrada padrão utilizando cin, e atribua o valor digitado à variável ch1;*/
+#include<iostream>
 
-#include <iostream>
 using namespace std;
 
-int main()
-{
+int main(){
 
-    char ch1, ch2, ch3;
+    char ch1,ch2,ch3;
 
-    cout << "Digite um char1: ";
+    cout << "Digite um caracter :";
     cin >> ch1;
+
+    return 0;
 }

@@ -1,28 +1,18 @@
-/*Exercício 2: Operações com char1s
-● Escreva um programa que:
-c. Verifique, utilizando o operador condicional (?) se trata de:
-    i. uma letra maiúscula;
-    ii. uma letra minúscula;
-    iii. um dígito;
-    iv. outro tipo de char1;*/
+#include<iostream>
+#include<cctype>
 
-#include <iostream>
 using namespace std;
 
 int main(){
 
-    char char1, char2, char3;
+    char ch1,ch2,ch3;
 
-    cout << "\nDigite um caractere: ";
-    cin >> char1;
+    cout << "Digite um caractere : ";
+    cin >> ch1;
 
-    char1 = (char1 >= 'A' && char1 <= 'Z') ? 'M' : 
-            (char1 >= 'a' && char1 <= 'z') ? 'm' : 
-            (char1 >= '0' && char1 <= '9') ? 'd' : 'o';
+    cout << (((int)(ch1) >= 65 && int(ch1) <=90 ) ? "É uma letra maiúscula" :
+             ((int)(ch1) >= 97 && int(ch1) <=122 ) ? "É uma letra minúscula" :
+             ((int)(ch1) >= 48 && int(ch1) <=57 ) ? "É um digito" : "É um caractere especial") << endl;
 
-    cout << "\nUtilizando o operador Ternario:\n";
-    cout << "É " << 
-        ((char1 == 'M') ? "uma letra maiúscula.\n" : 
-        (char1 == 'm') ? "uma letra minúscula.\n" : 
-        (char1 == 'd') ? "um dígito.\n" : "outro tipo de caractere.\n") << endl;
+    return 0;
 }
