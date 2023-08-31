@@ -11,8 +11,6 @@ int main(){
 
     cout << "Entre com o caractere do gene : ";
     cin >> gene;
-
-    gene = 16;
      
     count += (gene & 0x01); 
     count += (gene & 0x02) >> 1;
