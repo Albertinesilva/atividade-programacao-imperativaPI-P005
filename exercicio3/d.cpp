@@ -1,23 +1,20 @@
-/*Exercício 3: Operações com inteiros
- Escreva um programa, usando quando necessário o operador (?), que:
+#include<iostream>
 
-d. Atribua à variável c o produto das variáveis a e b, imprima o
-resultado na tela em formato octal;*/
-
-#include <iostream>
 using namespace std;
 
-int main()
-{
-    int a, b, c;
+int main(){
 
-    cout << "Digite o 1º número: ";
+    int a,b,c;
+
+    cout << "Entre com o valor da variavel a : " ;
     cin >> a;
 
-    cout << "Digite o 2º número: ";
+    cout << "Entre com o valor da variavel b : " ;
     cin >> b;
 
-    c = a * b;
+    c = a+b;
 
-    cout << "Produto dos números em octal: " << oct << c << endl;
+    cout << "A soma de " << a  << " + " << b << " é : " << oct << c << endl; 
+
+    return 0;
 }

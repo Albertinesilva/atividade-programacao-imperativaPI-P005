@@ -1,23 +1,20 @@
-/*Exercício 3: Operações com inteiros
- Escreva um programa, usando quando necessário o operador (?), que:
+#include<iostream>
 
-c. Atribua à variável c a somas das variáveis a e b, imprima o resultado
-na tela em formato hexadecimal;*/
-
-#include <iostream>
 using namespace std;
 
-int main()
-{
-    int a, b, c;
+int main(){
 
-    cout << "Digite o 1º número: ";
+    int a,b,c;
+
+    cout << "Entre com o valor da variavel a : " ;
     cin >> a;
 
-    cout << "Digite o 2º número: ";
+    cout << "Entre com o valor da variavel b : " ;
     cin >> b;
 
-    c = a + b;
+    c = a+b;
 
-    cout << "Soma dos números em hexadecimal: " << hex << c << endl;
+    cout << "A soma de " << a  << " + " << b << " é : " << hex << c << endl; 
+
+    return 0;
 }
