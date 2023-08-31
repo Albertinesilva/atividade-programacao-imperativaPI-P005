@@ -8,7 +8,6 @@ int main(){
 
     cout << "Entre com o caractere do gene : ";
     cin >> gene;
-    gene = 10;
     int count = 0 ;
      
     count += (gene & 0x01); 
