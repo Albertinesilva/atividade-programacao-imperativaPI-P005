@@ -1,12 +1,11 @@
-#include <iostream>
-#include <cmath>
+#include<iostream>
+#include<cmath>
 
 using namespace std;
 
-int main()
-{
+int main(){
 
-    double a, b, c, x;
+    double a,b,c,x;
     double p;
 
     cout << "Digite o valor de a : ";
@@ -21,8 +20,13 @@ int main()
     cout << "Digite o valor de x : ";
     cin >> x;
 
-    p = (a * x * x + b * x + c);
+    p = (a*x*x + b*x + c);
 
     cout << "Valor da expressão : " << p;
 
+
+
+
+
+    return 0;
 }

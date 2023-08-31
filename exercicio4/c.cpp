@@ -1,20 +1,23 @@
-/*Exercício 4: Operações com valores de ponto flutuante
-● Escreva um programa que:
-c. Considerando que x e y são coordenadas num plano cartesiano, identifique em que lado da curva f(x) = 5x + 2 se encontra (esquerda, direita ou na curva). Imprima o resultado na tela;*/
+#include<iostream>
 
-#include <iostream>
 using namespace std;
 
-int main()
-{
+int main(){
 
-    int x, y;
-
-    cout << "Digite um numero de ponto flutuante: ";
+    double x,y,z;
+    double curva;
+    
+    cout << "Digite o valor de x : ";
     cin >> x;
 
-    cout << "Digite outro numero de ponto flutuante: ";
+    cout << "Digite o valor de y : ";
     cin >> y;
 
-    cout << "O ponto (" << x << ", " << y << ") esta a " << (5 * x + 2 > y ? "esquerda" : (5 * x + 2 < y ? "direita" : "na curva")) << " da curva f(x) = 5x + 2" << endl;
+    curva = (5*x + 2);
+
+    cout << ((y > curva) ? "A esquerda da curva" : (y < curva) ? "A direita da curva" : "Na curva" ) << endl;
+
+
+
+    return 0;
 }
